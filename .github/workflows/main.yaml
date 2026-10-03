@@ -1,0 +1,12 @@
+name: 'Github actipns test'
+
+on: [push]
+
+jobs:
+    test_github_actions:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Hello World
+              run: echo 'Hello Github actions'
+            - name: 'Display repo name'
+              run: echo 'Helloo from  ${{ github.repository}}'
